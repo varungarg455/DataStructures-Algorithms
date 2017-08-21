@@ -5,6 +5,8 @@
  		1. Insert - Insertion at start, end and at a specific position.
  		2. Delete - Deletion at start, end, position and delete an element.
  		3. IsEmpty - Tells if the linked list is empty or not.
+ 		4. search - checkes if an element is there in list or not.
+ 		5. print list - print the linked list.
  * This is implemented as generic class so that we can put any type of
  * data/object inside this BST.
   
