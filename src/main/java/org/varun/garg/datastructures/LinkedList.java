@@ -123,6 +123,7 @@ public class LinkedList<T> implements ApplicationContextAware{
 		if(isEmpty()){
 			System.out.println("List is empty");
 		}
+		//This condition is checked if there is only 1 element in the list
 		else if(head.getNextNode() == null){
 			head = null;
 			tail = null;
@@ -167,6 +168,7 @@ public class LinkedList<T> implements ApplicationContextAware{
 	public boolean deleteElement(T data){
 		LinkedListNode<T> temp = head;
 		if(!isEmpty()){
+			//This condition is checked if the element to be deleted is the first element.
 			if(temp.getData() == data){
 				head = head.getNextNode();
 				no_elements--;
@@ -182,7 +184,7 @@ public class LinkedList<T> implements ApplicationContextAware{
 				}
 			}
 		}
-		System.out.println("List is empty");
+		System.out.println("List is empty or element not found in the list");
 		return false;
 	}
 	
